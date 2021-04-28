@@ -17,7 +17,7 @@ async function showData() {
     const searchTerm = document.getElementById("searchBox").value || "" ;
     console.log("search item", searchTerm);
     if (searchTerm !== "") { 
-        console.log("In IF statement")
+        // console.log("Success!")
       let recipes = await getData(searchTerm);
       let html = ""; 
       recipes.hits.forEach((e) => { 
