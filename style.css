@@ -16,16 +16,19 @@ header {
     text-align: left;
 }
 
-#icon {
-    margin-left: -50px;
+.main {
+    display: flex;
 }
 
-header h1 {
+.main img {
+    width: 100px;
+}
+
+.main h1 {
     font-size: 32px;
     color: #fff;
     font-style: italic;
     margin-top: 35px;
-    margin-left: -90px;
     padding: 0;
 }
 
@@ -45,6 +48,7 @@ input[type="button"] {
     background-color: #ff6347;
     color: #fff;
     cursor: pointer;
+    border: none;
 }
 
 input[type="button"]:hover {
@@ -59,7 +63,7 @@ input[type="button"]:focus {
 
 .back {
     margin-top: 20px;
-    padding: 8px 18px;
+    padding: 8px 10px;
     background-color: #fff;
     color: #ff6347;
     border: none;
@@ -71,7 +75,7 @@ input[type="button"]:focus {
     border: none;
 }
 
-back:focus {
+.back:focus {
     border: none;
     outline: none;
 }
@@ -81,6 +85,7 @@ back:focus {
     height: 100vh;
     margin: 0;
     color: #fff;
+    position: relative;
 }
 
 #title {
@@ -89,19 +94,12 @@ back:focus {
     font-style: italic;
     margin: 15px 20px;
     padding: 0;
+    position: absolute;
 }
 
 #title img {
+    width: 100px;
     margin-top: 15px;
-}
-
-#red {
-    position: absolute;
-    font-size: 22px;
-    font-style: italic;
-    color: #ff6347;
-    padding-left: 1000px;
-    font-family: serif;
 }
 
 a {
@@ -111,11 +109,12 @@ a {
 
 .banner {
     width: 100%;
-    height: 100vh;
-    position: relative;
+    height: 90vh;
+    position: absolute;
     background-image: url("./resources/heart.jpg");
     background-size: contain;
     background-position: center;
+    font-family: serif;
 }
 
 .content {
@@ -126,23 +125,32 @@ a {
 }
 
 .content h1 {
-    width: 40%;
+    width: 30%;
     font-size: 55px;
     float: right;
     color: #fff;
-    margin-left: 200px;
-    margin-right: 25px;
+    margin-right: 160px;
     padding-top: 40px;
+    
     text-align: left;
 }
 
-.content button {
-    width: 20%;
-    padding: 20px 40px;
-    margin-left: 1000px;
-    margin-top: 60px;
+#red {
+    position: absolute;
     font-size: 22px;
-    border-color: none;
+    font-style: italic;
+    color: #ff6347;
+    padding-left: 960px;
+    font-family: serif;
+}
+
+.banner button {
+    width: 10%;
+    padding: 16px 20px;
+    margin-left: 960px;
+    margin-top: 50px;
+    font-size: 22px;
+    border: none;
     border-radius: 15px;
     box-shadow: 0 6px 18px 0 hsla(0%, 0%, 0%, 0.2); 
     cursor: pointer;
@@ -150,26 +158,31 @@ a {
     color: #ff4500;
 }
 
-.content button:hover {
+.banner button:hover {
     border: none;
     opacity: 0.8;
 }
 
-.content button:focus {
+.banner button:focus {
     outline: none;
     border: none;
 }
 
 .sm-icons {
     width: 100%;
-    margin-top: 10px;
+    height: 10vh;
     display: inline-block;
     text-align: center;
     color: #000;
     font-size: 18px;
+    position: absolute;
+    z-index: 9;
+    top: 100%;
+    background-color: #fff;
 }
 
 .sm-icons p {
+    margin-top: -75px;
     font-style: italic;
     color: #ff6347;
 }
@@ -186,12 +199,17 @@ a {
 }
 
 .footer {
+    position: absolute;
+    top: 100%;
     width: 100%;
-    padding: 50px;
+    height: 10vh;
     display: flex;
     background-color: #050505;
     justify-content: space-evenly;
     color: #ff6347;
+    z-index: 9;
+    padding-top: 15px;
+    margin-bottom: -50px;
 }
 
  div#myContainer {
@@ -231,3 +249,124 @@ a {
     color: #ff6347;
 }
 
+@media only screen and (max-width: 760px) {
+    header {
+        display: flex;
+        flex-flow: column nowrap;
+        height: 250px;
+        margin-top: -25px;
+        margin-bottom: 10px;
+    }
+
+    .main {
+        width: 100%;
+        align-items: center;
+        margin: 10px;
+    }
+
+    .main img {
+        width: 60px;
+    }
+
+    .main h1 {
+        margin-left: -70px;
+        font-size: 20px;
+        padding-top: 55px;
+    }
+
+    #searchBox {
+        width: 100%;
+    }
+
+    input[type="text"] {
+        width: 90%;
+        margin: auto;
+    }
+
+    .container {
+        height: 100vh;
+    }
+
+    .banner {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+    }
+
+    #title {
+        height: 300px;
+        flex-flow: row nowrap;
+        align-items: right;
+        margin-left: 270px;
+    }
+
+    #title img {
+        width: 60px;
+        margin-left: 30px;
+    }
+
+    #title h1 {
+        font-size: 20px;
+    }
+
+    .content {
+        width: 100%;
+        text-align: right;    
+    }
+
+    .content h1{
+        font-size: 30px;
+        margin-right: 10px;
+        text-align: right;
+        height: 300px;
+        line-height: 1.7;
+        padding-top: 0px;
+        margin-top: -40px;
+    }
+
+    #red {
+        margin-top: 350px;
+        padding-left: 0px;
+        font-size: 18px;
+        position: relative;
+        text-align: right;
+        margin-right: 10px;
+    }
+
+    .banner button {
+        margin: 20px;
+        padding: 4px;
+        width: 100px;
+        font-size: 18px;
+    }
+
+    .footer {
+        width: 100%;
+        flex-flow: column nowrap;
+        align-items: center;
+        margin-bottom: -10px;
+    }
+
+    .footer h2 {
+        font-size: 20px;
+        margin: 10px;
+    }
+
+    .footer p {
+        margin: 10px;
+    }
+
+    div#myContainer {
+        width: 100%;
+        margin: auto;
+        grid-template-columns: auto;
+        justify-content: space-evenly;
+    }
+
+    .recipe-image {
+        width: 240px;
+        height: 240px;
+        margin-left: 50px;
+    }
+}
