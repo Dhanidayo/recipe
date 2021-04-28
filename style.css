@@ -18,6 +18,7 @@ header {
 
 .main {
     display: flex;
+    margin-left: -50px;
 }
 
 .main img {
@@ -40,7 +41,7 @@ header {
 
 input[type="text"] {
     margin-top: 30px;
-    padding: 12px;
+    padding: 12px 300px 12px 5px;    
 }
 
 input[type="button"] {
@@ -281,6 +282,7 @@ a {
     input[type="text"] {
         width: 90%;
         margin: auto;
+        padding: 12px 120px 12px 5px; 
     }
 
     .container {
@@ -341,20 +343,25 @@ a {
         font-size: 18px;
     }
 
+    .sm-icons {
+        height: 250px;
+        margin-top: 8px;
+    }
+
     .footer {
         width: 100%;
         flex-flow: column nowrap;
         align-items: center;
         margin-bottom: -10px;
+        height: 350px;
     }
 
     .footer h2 {
         font-size: 20px;
-        margin: 10px;
     }
 
     .footer p {
-        margin: 10px;
+        margin:-10px  10px;
     }
 
     div#myContainer {

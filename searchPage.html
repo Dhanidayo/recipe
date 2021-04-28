@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Soups.com</title>
+    <title>Search Recipes</title>
     <link rel="stylesheet" href="style.css">
     <link rel="text/html" href="index.html">
 </head>
@@ -13,16 +13,15 @@
     <header>
         <div class="main">
         <img src="./resources/icon.png" alt="soup icon">
-        <h1>Soups.com</h1>
+        <h1>Recipe.com</h1>
         </div>
-        <div id="searchBox">
+        <div id="search-box">
             <form>
-                <input type="text" name=searchbox id="searchBox">
-                <input type="button" id="searchBtn" value="Search Recipe" onclick="getData()">
-                <button class="back"><a href="index.html" class="back"> Go back</a></button>
+                <input type="text" name="searchbox" id="searchBox">
+                <input type="button" id="searchBtn" value="Search Recipe" onclick="showData()"> 
+                <button class="back"><a href="index.html" class="back"> Go back</a></button> 
             </form>
         </div>
-        <div id="edamam-badge" data-color="transparent"></div>
     </header>
 
     <div id="myContainer"></div> 
