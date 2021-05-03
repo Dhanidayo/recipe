@@ -18,7 +18,7 @@ header {
 
 .main {
     display: flex;
-    margin-left: -50px;
+    margin-left: -100px;
 }
 
 .main img {
@@ -35,7 +35,7 @@ header {
 
 #searchBox {
     width: 60%;
-    margin-left: 0px;
+    margin-left: -100px;
     color: #000;
 }
 
@@ -180,6 +180,7 @@ a {
     z-index: 9;
     top: 100%;
     background-color: #fff;
+    margin-top: 5px;
 }
 
 .sm-icons p {
