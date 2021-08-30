@@ -1,2 +1,2 @@
 # soups
-A search page that shows soup recipes
+A website for searching for over 100 different soup recipes.
